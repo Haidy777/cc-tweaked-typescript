@@ -1,0 +1,26 @@
+{
+  "name": "cc-tweaked-typescript",
+  "version": "0.1.0",
+  "description": "TypeScript types, utilities, and scripts for CC:Tweaked (ComputerCraft)",
+  "author": "Philipp Haidenbauer",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && tstl && tsx scripts/generate-manifest.ts",
+    "lint": "biome check src/",
+    "lint:fix": "biome check --write src/",
+    "format": "biome format --write src/",
+    "clean": "rm -rf build",
+    "release": "tsx scripts/release.ts patch",
+    "release:minor": "tsx scripts/release.ts minor",
+    "release:major": "tsx scripts/release.ts major"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.13",
+    "@typescript-to-lua/language-extensions": "1.19.0",
+    "computercraft-types": "1.0.10",
+    "tsx": "^4.21.0",
+    "typescript": "6.0.2",
+    "typescript-to-lua": "1.36.0"
+  }
+}

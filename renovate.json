@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "description": "Group TypeScript-to-Lua ecosystem",
+      "matchPackageNames": [
+        "typescript",
+        "typescript-to-lua",
+        "@typescript-to-lua/language-extensions"
+      ],
+      "groupName": "TypeScript-to-Lua"
+    },
+    {
+      "description": "Group tooling",
+      "matchPackageNames": ["tsx", "@biomejs/biome"],
+      "groupName": "Tooling"
+    }
+  ],
+  "schedule": ["before 6am"],
+  "postUpgradeTasks": {
+    "commands": ["npm install --package-lock-only"],
+    "executionMode": "update"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "repo": {
+    "owner": "Haidy777",
+    "name": "cc-tweaked-typescript",
+    "branch": "main"
+  },
+  "files": {
+    "lualib_bundle": {
+      "description": "TypeScript runtime polyfills (auto-installed when needed)",
+      "type": "system",
+      "source": "build/lualib_bundle.lua",
+      "target": "lualib_bundle.lua"
+    },
+    "manifest": {
+      "description": "Shared manifest types, HTTP, and file I/O utilities",
+      "type": "lib",
+      "source": "build/lib/manifest.lua",
+      "target": "lib/manifest.lua"
+    },
+    "turtle/bot": {
+      "description": "Turtle Bot class with position tracking, fuel management, and pathfinding",
+      "type": "lib",
+      "source": "build/lib/turtle/bot.lua",
+      "target": "lib/turtle/bot.lua"
+    },
+    "turtle/detect": {
+      "description": "Turtle detection and capability info",
+      "type": "lib",
+      "source": "build/lib/turtle/detect.lua",
+      "target": "lib/turtle/detect.lua"
+    },
+    "turtle/navigation": {
+      "description": "Position, direction types, and movement math",
+      "type": "lib",
+      "source": "build/lib/turtle/navigation.lua",
+      "target": "lib/turtle/navigation.lua"
+    },
+    "updater": {
+      "description": "Auto-update library — call checkForUpdates() in your scripts",
+      "type": "lib",
+      "source": "build/lib/updater.lua",
+      "target": "lib/updater.lua"
+    },
+    "hello-world": {
+      "description": "Simple hello world test script",
+      "type": "script",
+      "source": "build/scripts/hello-world.lua",
+      "target": "hello-world"
+    },
+    "installer": {
+      "description": "The installer itself",
+      "type": "system",
+      "source": "build/scripts/installer.lua",
+      "target": "installer"
+    }
+  }
+}
