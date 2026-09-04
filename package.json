@@ -16,7 +16,7 @@
     "release:major": "tsx scripts/release.ts major"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.13",
+    "@biomejs/biome": "2.5.12",
     "@typescript-to-lua/language-extensions": "1.19.0",
     "computercraft-types": "1.0.10",
     "tsx": "^4.21.0",
